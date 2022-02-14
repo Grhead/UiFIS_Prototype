@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\App.xaml
-11407045341
+11-1618442774
 
-5-1767724136
+15-297776100
 1941142463650
-MainWindow.xaml;
+AuthWindow.xaml;Delete.xaml;DoctorDiagnosis.xaml;DoctorMain.xaml;DoctorPrint.xaml;DoctorResearch.xaml;Edit.xaml;ManagerMain.xaml;ManagerRegistre.xaml;RecordCreate.xaml;RecordSearch.xaml;
 
 False
 

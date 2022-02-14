@@ -1,4 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Delete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DoctorDiagnosis.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DoctorMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DoctorPrint.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DoctorResearch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Edit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManagerMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManagerRegistre.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RecordCreate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RecordSearch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AuthWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Delete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DoctorDiagnosis.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DoctorMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DoctorPrint.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DoctorResearch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Edit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagerMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagerRegistre.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RecordCreate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RecordSearch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
 </Project>

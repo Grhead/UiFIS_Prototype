@@ -6,8 +6,52 @@
         xmlns:local="clr-namespace:UiFIS_Prototype"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Delete" Height="450" Width="450">
+        Title="EditDelete" Height="450" Width="450">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox
+            Name="NumberOfCredit"
+            BorderBrush="Black"
+            BorderThickness="2"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Margin="20 30 20 30"
+            Background="PaleGoldenrod">
+        </TextBox>
+        <TextBox
+            Name="NumberOfOMC"
+            BorderBrush="Black"
+            BorderThickness="2"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Margin="20 30 20 30"
+            Background="PaleGoldenrod">
+        </TextBox>
+        <Button
+            Name="EditBtn"
+            Grid.Row="2"
+            Grid.Column="0"
+            Content="Изменить"
+            FontSize="30"
+            Margin="20 30 20 30">
+        </Button>
+        <Button
+            Name="DeleteBtn"
+            Grid.Row="2"
+            Grid.Column="1"
+            Content="Удалить"
+            FontSize="30"
+            Margin="20 30 20 30">
+        </Button>
     </Grid>
 </Window>

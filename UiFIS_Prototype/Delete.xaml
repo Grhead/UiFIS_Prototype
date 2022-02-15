@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UiFIS_Prototype"
         mc:Ignorable="d"
-        Title="Delete" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="Delete" Height="450" Width="450">
     <Grid>
         
     </Grid>

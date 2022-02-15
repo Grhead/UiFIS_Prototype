@@ -23,7 +23,6 @@ C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-win
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\DoctorMain.g.cs
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\DoctorPrint.g.cs
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\DoctorResearch.g.cs
-C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Edit.g.cs
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\ManagerMain.g.cs
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\ManagerRegistre.g.cs
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\RecordCreate.g.cs
@@ -37,5 +36,4 @@ C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-win
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\ManagerRegistre.baml
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\RecordCreate.baml
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\RecordSearch.baml
-C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Edit.baml
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Delete.baml

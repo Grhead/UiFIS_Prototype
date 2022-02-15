@@ -21,6 +21,8 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <TextBlock
             Name="Name"
@@ -134,9 +136,9 @@
         </Label>
         <TextBlock
             Name="Contract"
-            Text ="Номер Договора"
+            Text ="Номер договора"
             Grid.Row="0"
-            Grid.Column="2"
+            Grid.Column="3"
             Margin="15 0 0 0"
             VerticalAlignment="Center"
             FontFamily="Times New Roman"
@@ -145,9 +147,9 @@
         <Label
             Name="ContractLabel"
             Grid.Row="0"
-            Grid.Column="2"
+            Grid.Column="4"
             Grid.ColumnSpan="2"
-            Margin="200 0 30 0"
+            Margin="10 0 30 0"
             VerticalAlignment="Center"
             FontFamily="Times New Roman"
             FontSize="20"
@@ -158,7 +160,7 @@
             Name="Invalid"
             Text ="Инвалидность"
             Grid.Row="1"
-            Grid.Column="2"
+            Grid.Column="3"
             Margin="15 0 0 0"
             VerticalAlignment="Center"
             FontFamily="Times New Roman"
@@ -167,9 +169,9 @@
         <Label
             Name="InvalidLabel"
             Grid.Row="1"
-            Grid.Column="2"
+            Grid.Column="4"
             Grid.ColumnSpan="2"
-            Margin="200 0 30 0"
+            Margin="10 0 30 0"
             VerticalAlignment="Center"
             FontFamily="Times New Roman"
             FontSize="20"
@@ -180,7 +182,8 @@
             Name="LastQuery"
             Text ="Предыдущее обращение"
             Grid.Row="2"
-            Grid.Column="2"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
             Margin="15 0 0 0"
             VerticalAlignment="Center"
             FontFamily="Times New Roman"
@@ -189,9 +192,9 @@
         <Label
             Name="LastQueryLabel"
             Grid.Row="2"
-            Grid.Column="2"
+            Grid.Column="4"
             Grid.ColumnSpan="2"
-            Margin="300 0 30 0"
+            Margin="100 0 30 0"
             VerticalAlignment="Center"
             FontFamily="Times New Roman"
             FontSize="20"
@@ -202,7 +205,7 @@
             Name="LastQueryReason"
             Text ="Причина"
             Grid.Row="4"
-            Grid.Column="2"
+            Grid.Column="3"
             Margin="15 0 0 0"
             VerticalAlignment="Center"
             FontFamily="Times New Roman"
@@ -211,8 +214,10 @@
         <TextBlock
             Name="LastQueryReasonLabel"
             Grid.Row="3"
-            Grid.Column="3"
+            Grid.Column="4"
+            Grid.ColumnSpan="2"
             Grid.RowSpan="3"
+            Margin="10 10 30 10"
             Background="Gainsboro">
         </TextBlock>
         <Button

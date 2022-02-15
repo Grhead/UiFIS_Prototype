@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:UiFIS_Prototype"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="1100"
+      d:DesignHeight="450" d:DesignWidth="1200"
       Title="DoctorDiagnosis">
 
     <Grid Background="White">
@@ -43,7 +43,7 @@
             Margin="0 25 0 25">
         </TextBlock>
         <ComboBox 
-            Name="phonesList" 
+            Name="DateList" 
             Height="40" 
             VerticalAlignment="Center"
             Margin="0 0 10 0"
@@ -57,6 +57,7 @@
             <TextBlock>2021</TextBlock>
         </ComboBox>
         <ScrollViewer
+            Name="Scroller"
             Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="6"

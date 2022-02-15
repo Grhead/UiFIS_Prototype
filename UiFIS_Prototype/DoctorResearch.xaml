@@ -59,6 +59,8 @@
             Grid.Row="1"
             Grid.Column="1"
             Margin="0 10 10 10"
+            FontFamily="Times New Roman"
+            FontSize="16"
             Grid.ColumnSpan="2"
             Grid.RowSpan="2">
         </TextBox>
@@ -80,7 +82,9 @@
             Grid.Row="3"
             Grid.Column="1"
             Grid.ColumnSpan="2"
-            Grid.RowSpan="2">
+            Grid.RowSpan="2"
+            FontFamily="Times New Roman"
+            FontSize="16">
         </TextBox>
         <TextBlock
             Name="Results"
@@ -100,7 +104,9 @@
             Grid.Row="1"
             Grid.Column="4"
             Grid.ColumnSpan="2"
-            Grid.RowSpan="2">
+            Grid.RowSpan="2"
+            FontFamily="Times New Roman"
+            FontSize="16">
         </TextBox>
         <TextBlock
             Name="Finish"
@@ -120,7 +126,9 @@
             Grid.Row="3"
             Grid.Column="4"
             Grid.ColumnSpan="2"
-            Grid.RowSpan="2">
+            Grid.RowSpan="2"
+            FontFamily="Times New Roman"
+            FontSize="16">
         </TextBox>
         <Button
             Name="GeneralButton"

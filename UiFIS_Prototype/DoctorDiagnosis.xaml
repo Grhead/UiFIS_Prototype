@@ -5,10 +5,180 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:UiFIS_Prototype"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="1100"
       Title="DoctorDiagnosis">
 
-    <Grid>
-        
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock
+            Name="Number"
+            Text="Номер обращения:"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontFamily="Times New Roman"
+            FontSize="22"
+            VerticalAlignment="Center">
+        </TextBlock>
+        <TextBlock
+            Name="NumberAdvanced"
+            Grid.Row="0"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Background="Gainsboro"
+            Margin="0 25 0 25">
+        </TextBlock>
+        <ComboBox 
+            Name="phonesList" 
+            Height="40" 
+            VerticalAlignment="Center"
+            Margin="0 0 10 0"
+            Grid.Row="0"
+            Grid.Column="4"
+            Grid.ColumnSpan="2">
+            <TextBlock>2018</TextBlock>
+            <TextBlock>2019</TextBlock>
+            <TextBlock>2020</TextBlock>
+            <TextBlock>2021</TextBlock>
+            <TextBlock>2021</TextBlock>
+        </ComboBox>
+        <ScrollViewer
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            Grid.RowSpan="4">
+            <StackPanel>
+                <TextBlock
+                    MinHeight="60"
+                    Background="Gray">
+                </TextBlock>
+                <TextBlock
+                    MinHeight="60"
+                    Background="Aquamarine">
+                </TextBlock>
+                <TextBlock
+                    MinHeight="60"
+                    Background="Firebrick">
+                </TextBlock>
+                <TextBlock
+                    MinHeight="60"
+                    Background="DarkGray">
+                </TextBlock>
+                <TextBlock
+                    MinHeight="60"
+                    Background="AliceBlue">
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+        <Button
+            Name="GeneralButton"
+            Content="Общая"
+            Grid.Row="6"
+            Grid.Column="0"
+            Margin="20 20 20 0"
+            FontFamily="Times New Roman"
+            FontSize="25">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="15 15 0 0"
+                                        Background="LightSlateGray">
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button
+            Name="ResearchButton"
+            Content="Обследование"
+            Grid.Row="6"
+            Grid.Column="1"
+            Margin="20 20 20 0"
+            FontFamily="Times New Roman"
+            FontSize="25">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="15 15 0 0"
+                                        Background="LightSlateGray">
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button
+            Name="DiagnosisButton"
+            Content="Диагнозы"
+            Grid.Row="6"
+            Grid.Column="2"
+            Margin="20 20 20 0"
+            FontFamily="Times New Roman"
+            FontSize="25">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="15 15 0 0"
+                                        Background="LightSlateGray">
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button
+            Name="PrintButton"
+            Content="Печать"
+            Grid.Row="6"
+            Grid.Column="3"
+            Margin="20 20 20 0"
+            FontFamily="Times New Roman"
+            FontSize="25">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="15 15 0 0"
+                                        Background="LightSlateGray">
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
     </Grid>
 </Page>

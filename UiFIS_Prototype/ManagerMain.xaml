@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UiFIS_Prototype"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="ManagerMain" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>

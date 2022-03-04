@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UiFIS_Prototype"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="ManagerRegistre" Height="600" Width="1400">
     <Grid>
         <Grid.ColumnDefinitions>

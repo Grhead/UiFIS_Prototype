@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\forda\\source\\repos\\UiFIS_Prototype\\UiFIS_Prototype\\UiFIS_Prototype.csproj": {}
+    "C:\\Users\\gr604_mieol\\Source\\Repos\\UiFIS_Prototype\\UiFIS_Prototype\\UiFIS_Prototype.csproj": {}
   },
   "projects": {
-    "C:\\Users\\forda\\source\\repos\\UiFIS_Prototype\\UiFIS_Prototype\\UiFIS_Prototype.csproj": {
+    "C:\\Users\\gr604_mieol\\Source\\Repos\\UiFIS_Prototype\\UiFIS_Prototype\\UiFIS_Prototype.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\forda\\source\\repos\\UiFIS_Prototype\\UiFIS_Prototype\\UiFIS_Prototype.csproj",
+        "projectUniqueName": "C:\\Users\\gr604_mieol\\Source\\Repos\\UiFIS_Prototype\\UiFIS_Prototype\\UiFIS_Prototype.csproj",
         "projectName": "UiFIS_Prototype",
-        "projectPath": "C:\\Users\\forda\\source\\repos\\UiFIS_Prototype\\UiFIS_Prototype\\UiFIS_Prototype.csproj",
-        "packagesPath": "C:\\Users\\forda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\forda\\source\\repos\\UiFIS_Prototype\\UiFIS_Prototype\\obj\\",
+        "projectPath": "C:\\Users\\gr604_mieol\\Source\\Repos\\UiFIS_Prototype\\UiFIS_Prototype\\UiFIS_Prototype.csproj",
+        "packagesPath": "C:\\Users\\gr604_mieol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gr604_mieol\\Source\\Repos\\UiFIS_Prototype\\UiFIS_Prototype\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\forda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gr604_mieol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -61,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\
+C:\Users\gr604_mieol\Source\Repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\
 UiFIS_Prototype
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\App.xaml
+C:\Users\gr604_mieol\Source\Repos\UiFIS_Prototype\UiFIS_Prototype\App.xaml
 101386424985
 
 14907663677
-1941142463650
+1941905061893
 AuthWindow.xaml;Delete.xaml;DoctorDiagnosis.xaml;DoctorMain.xaml;DoctorPrint.xaml;DoctorResearch.xaml;ManagerMain.xaml;ManagerRegistre.xaml;RecordCreate.xaml;RecordSearch.xaml;
 
 True

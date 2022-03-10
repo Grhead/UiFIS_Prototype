@@ -22,14 +22,14 @@
             Text="17 января 2022 13:12"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            FontFamily="Arial"
+            FontFamily="Montserrat"
             FontSize="28"></TextBlock>
         <TextBox 
             Name="Login"
             TextWrapping="NoWrap"
             Height="40"
             Text ="Логин"
-            FontFamily="Arial"
+            FontFamily="Montserrat"
             FontSize="22"
             Foreground="Gray"
             VerticalAlignment="Center"
@@ -43,6 +43,7 @@
             Password="0000000000"
             VerticalContentAlignment="Center"
             Height="40"
+            FontFamily="Montserrat"
             VerticalAlignment="Center"
             Margin="30 5 30 5"
             Background="Azure"
@@ -51,7 +52,7 @@
         <Button 
             Name="Enter" 
             Content="Вход"
-            FontFamily="Arial"
+            FontFamily="Montserrat"
             Margin="110 20 110 20"
             FontSize="25"
             Grid.Row="3" 
@@ -59,7 +60,7 @@
         <Button 
             Name="Help" 
             Content="Помощь?"
-            FontFamily="Arial"
+            FontFamily="Montserrat"
             Margin="110 20 110 20"
             FontSize="25"
             Grid.Row="4" 

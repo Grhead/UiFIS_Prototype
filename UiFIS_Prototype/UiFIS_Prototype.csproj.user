@@ -16,6 +16,9 @@
     <Compile Update="DoctorMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DoctorMainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="DoctorPrint.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,9 +37,6 @@
     <Compile Update="RecordSearch.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window1.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AuthWindow.xaml">
@@ -49,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DoctorMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DoctorMainPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DoctorPrint.xaml">
@@ -67,9 +70,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="RecordSearch.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

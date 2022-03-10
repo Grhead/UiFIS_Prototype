@@ -77,7 +77,7 @@ namespace UiFIS_Prototype {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UiFIS_Prototype;V1.0.0.0;component/recordsearch.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UiFIS_Prototype;component/recordsearch.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\RecordSearch.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

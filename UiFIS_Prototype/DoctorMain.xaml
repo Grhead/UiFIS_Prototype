@@ -25,210 +25,24 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock
-            Name="Name"
-            Text ="Имя"
+
+        <Frame 
+            x:Name="MainFrame"
             Grid.Row="0"
             Grid.Column="0"
-            Margin="15 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20">
-        </TextBlock>
-        <Label
-            Name="NameLabel"
-            Grid.Row="0"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Margin="150 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20"
-            Background="Gainsboro"
-            Height="28">
-        </Label>
-        <TextBlock
-            Name="SecondName"
-            Text ="Фамилия"
-            Grid.Row="1"
-            Grid.Column="0"
-            Margin="15 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20">
-        </TextBlock>
-        <Label
-            Name="SecondNameLabel"
-            Grid.Row="1"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Margin="150 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20"
-            Background="Gainsboro"
-            Height="28">
-        </Label>
-        <TextBlock
-            Name="LastName"
-            Text ="Отчество"
-            Grid.Row="2"
-            Grid.Column="0"
-            Margin="15 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20">
-        </TextBlock>
-        <Label
-            Name="LastNameLabel"
-            Grid.Row="2"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Margin="150 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20"
-            Background="Gainsboro"
-            Height="28">
-        </Label>
-        <TextBlock
-            Name="BirthDay"
-            Text ="Дата Рождения"
-            Grid.Row="3"
-            Grid.Column="0"
-            Margin="15 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20">
-        </TextBlock>
-        <Label
-            Name="BirthDayLabel"
-            Grid.Row="3"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Margin="150 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20"
-            Background="Gainsboro"
-            Height="28">
-        </Label>
-        <TextBlock
-            Name="Gender"
-            Text ="Пол"
-            Grid.Row="4"
-            Grid.Column="0"
-            Margin="15 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20">
-        </TextBlock>
-        <Label
-            Name="GenderLabel"
-            Grid.Row="4"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Margin="150 0 140 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20"
-            Background="Gainsboro"
-            Height="28">
-        </Label>
-        <TextBlock
-            Name="Contract"
-            Text ="Номер договора"
-            Grid.Row="0"
-            Grid.Column="3"
-            Margin="15 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20">
-        </TextBlock>
-        <Label
-            Name="ContractLabel"
-            Grid.Row="0"
-            Grid.Column="4"
-            Grid.ColumnSpan="2"
-            Margin="10 0 30 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20"
-            Background="Gainsboro"
-            Height="28">
-        </Label>
-        <TextBlock
-            Name="Invalid"
-            Text ="Инвалидность"
-            Grid.Row="1"
-            Grid.Column="3"
-            Margin="15 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20">
-        </TextBlock>
-        <Label
-            Name="InvalidLabel"
-            Grid.Row="1"
-            Grid.Column="4"
-            Grid.ColumnSpan="2"
-            Margin="10 0 30 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20"
-            Background="Gainsboro"
-            Height="28">
-        </Label>
-        <TextBlock
-            Name="LastQuery"
-            Text ="Предыдущее обращение"
-            Grid.Row="2"
-            Grid.Column="3"
-            Grid.ColumnSpan="2"
-            Margin="15 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20">
-        </TextBlock>
-        <Label
-            Name="LastQueryLabel"
-            Grid.Row="2"
-            Grid.Column="4"
-            Grid.ColumnSpan="2"
-            Margin="100 0 30 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20"
-            Background="Gainsboro"
-            Height="28">
-        </Label>
-        <TextBlock
-            Name="LastQueryReason"
-            Text ="Причина"
-            Grid.Row="4"
-            Grid.Column="3"
-            Margin="15 0 0 0"
-            VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="20">
-        </TextBlock>
-        <TextBlock
-            Name="LastQueryReasonLabel"
-            Grid.Row="3"
-            Grid.Column="4"
-            Grid.ColumnSpan="2"
-            Grid.RowSpan="3"
-            Margin="10 10 30 10"
-            Background="Gainsboro">
-        </TextBlock>
+            Grid.ColumnSpan="6"
+            Grid.RowSpan="6"
+            Source="">
+        </Frame>
         <Button
             Name="GeneralButton"
             Content="Общая"
             Grid.Row="6"
             Grid.Column="0"
             Margin="20 20 20 0"
-            FontFamily="Times New Roman"
-            FontSize="25">
+            FontFamily="Montserrat"
+            FontSize="25"
+            Click="GeneralButton_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Template">
@@ -251,8 +65,9 @@
             Grid.Row="6"
             Grid.Column="1"
             Margin="20 20 20 0"
-            FontFamily="Times New Roman"
-            FontSize="25">
+            FontFamily="Montserrat"
+            FontSize="21"
+            Click="ResearchButton_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Template">
@@ -275,8 +90,9 @@
             Grid.Row="6"
             Grid.Column="2"
             Margin="20 20 20 0"
-            FontFamily="Times New Roman"
-            FontSize="25">
+            FontFamily="Montserrat"
+            FontSize="25"
+            Click="DiagnosisButton_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Template">
@@ -299,8 +115,9 @@
             Grid.Row="6"
             Grid.Column="3"
             Margin="20 20 20 0"
-            FontFamily="Times New Roman"
-            FontSize="25">
+            FontFamily="Montserrat"
+            FontSize="25"
+            Click="PrintButton_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Template">

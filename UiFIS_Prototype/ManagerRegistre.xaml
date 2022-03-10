@@ -34,6 +34,8 @@
             Grid.Row="0"
             Grid.Column="2"
             Grid.ColumnSpan="2"
+            FontSize="16"
+            FontFamily="Montserrat"
             Background="AliceBlue"
             Margin="10 ">
         </TextBox>
@@ -43,6 +45,8 @@
             Grid.Column="2"
             Grid.ColumnSpan="2"
             Background="AliceBlue"
+            FontSize="16"
+            FontFamily="Montserrat"
             Margin="10 ">
         </TextBox>
         <TextBox
@@ -51,6 +55,8 @@
             Grid.Column="2"
             Grid.ColumnSpan="2"
             Background="AliceBlue"
+            FontSize="16"
+            FontFamily="Montserrat"
             Margin="10 ">
         </TextBox>
         <TextBox
@@ -59,6 +65,8 @@
             Grid.Column="2"
             Grid.ColumnSpan="2"
             Background="AliceBlue"
+            FontSize="16"
+            FontFamily="Montserrat"
             Margin="10 ">
         </TextBox>
         <TextBox
@@ -66,6 +74,8 @@
             Grid.Row="4"
             Grid.Column="2"
             Grid.ColumnSpan="2"
+            FontSize="16"
+            FontFamily="Montserrat"
             Background="AliceBlue"
             Margin="10 ">
         </TextBox>
@@ -73,6 +83,8 @@
             Name="NumberOMC"
             Grid.Row="1"
             Grid.Column="4"
+            FontSize="16"
+            FontFamily="Montserrat"
             Grid.ColumnSpan="2"
             Background="AliceBlue"
             Margin="10 ">
@@ -82,6 +94,8 @@
             Grid.Row="2"
             Grid.Column="4"
             Grid.ColumnSpan="2"
+            FontSize="16"
+            FontFamily="Montserrat"
             Background="AliceBlue"
             Margin="10 ">
         </TextBox>
@@ -90,6 +104,8 @@
             Grid.Row="3"
             Grid.Column="4"
             Grid.ColumnSpan="2"
+            FontSize="16"
+            FontFamily="Montserrat"
             Background="AliceBlue"
             Margin="10 ">
         </ComboBox>
@@ -98,6 +114,8 @@
             Grid.Row="5"
             Grid.Column="4"
             Grid.ColumnSpan="4"
+            FontSize="16"
+            FontFamily="Montserrat"
             Background="AliceBlue"
             Margin="10 ">
         </TextBox>
@@ -105,12 +123,16 @@
             Name="DiagnosisBox"
             Grid.Row="6"
             Grid.Column="4"
+            FontSize="16"
+            FontFamily="Montserrat"
             Grid.ColumnSpan="4"
             Background="AliceBlue"
             Margin="10 ">
         </TextBox>
         <TextBox
             Name="WorkBox"
+            FontSize="16"
+            FontFamily="Montserrat"
             Grid.Row="7"
             Grid.Column="4"
             Grid.ColumnSpan="4"
@@ -123,8 +145,8 @@
             Grid.Column="2"
             Text="Место работы/ учебы"
             VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="24"
+            FontSize="16"
+            FontFamily="Montserrat"
             Grid.ColumnSpan="2"
             Margin="10 ">
         </TextBlock>
@@ -134,8 +156,8 @@
             Grid.Column="2"
             Text="Диагнозы"
             VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="24"
+            FontSize="16"
+            FontFamily="Montserrat"
             Grid.ColumnSpan="2"
             Margin="10 ">
         </TextBlock>
@@ -145,8 +167,8 @@
             Grid.Column="2"
             Text="Адрес проживания"
             VerticalAlignment="Center"
-            FontFamily="Times New Roman"
-            FontSize="24"
+            FontSize="16"
+            FontFamily="Montserrat"
             Grid.ColumnSpan="2"
             Margin="10 ">
         </TextBlock>
@@ -155,12 +177,16 @@
             Grid.Row="5 "
             Grid.Column="0"
             Grid.ColumnSpan="2"
+            FontSize="16"
+            FontFamily="Montserrat"
             Background="AliceBlue"
             Margin="10 ">
         </ComboBox>
         <ComboBox
             Name="InvalidBox"
             Grid.Row="6"
+            FontSize="16"
+            FontFamily="Montserrat"
             Grid.Column="0"
             Grid.ColumnSpan="2"
             Background="AliceBlue"
@@ -171,6 +197,8 @@
             Grid.Row="7"
             Grid.Column="0"
             Grid.ColumnSpan="2"
+            FontSize="16"
+            FontFamily="Montserrat"
             Background="AliceBlue"
             Margin="10 ">
         </ComboBox>
@@ -179,19 +207,21 @@
             Grid.Row="0"
             Grid.Column="6"
             Grid.ColumnSpan="2"
+            FontSize="16"
+            FontFamily="Montserrat"
             Background="AliceBlue"
             Margin="10 ">
             <TextBlock
                 Name="PossportCh"
                 Text="Паспорт"
-                FontFamily="Times New Roman"
-                FontSize="18">
+                FontSize="16"
+                FontFamily="Montserrat">
             </TextBlock>
             <TextBlock
                 Name="BirthCh"
                 Text="Свидетельство о рождении"
-                FontFamily="Times New Roman"
-                FontSize="18">
+                FontSize="16"
+                FontFamily="Montserrat">
             </TextBlock>
         </ComboBox>
         <GroupBox 
@@ -216,6 +246,8 @@
                     Name="Serial"
                     Grid.Row="0"
                     Grid.Column="0"
+                    FontSize="16"
+                    FontFamily="Montserrat"
                     Background="AliceBlue"
                     Margin="10 ">
                 </TextBox>
@@ -223,11 +255,15 @@
                     Name="Number"
                     Grid.Row="1"
                     Grid.Column="0"
+                    FontSize="16"
+            FontFamily="Montserrat"
                     Background="AliceBlue"
                     Margin="10 ">
                 </TextBox>
                 <TextBox
                     Name="DateOut"
+                    FontSize="16"
+            FontFamily="Montserrat"
                     Grid.Row="2"
                     Grid.Column="0"
                     Background="AliceBlue"
@@ -236,6 +272,8 @@
                 <TextBox
                     Name="Code"
                     Grid.Row="0"
+                    FontSize="16"
+            FontFamily="Montserrat"
                     Grid.Column="1"
                     Background="AliceBlue"
                     Margin="10 ">
@@ -244,6 +282,8 @@
                     Name="NamePod"
                     Grid.Row="3"
                     Grid.Column="0"
+                    FontSize="16"
+            FontFamily="Montserrat"
                     Grid.ColumnSpan="2"
                     Background="AliceBlue"
                     Margin="10 ">

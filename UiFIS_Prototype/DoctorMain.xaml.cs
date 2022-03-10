@@ -23,5 +23,25 @@ namespace UiFIS_Prototype
         {
             InitializeComponent();
         }
+
+        private void GeneralButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Uri("DoctorMainPage.xaml", UriKind.Relative));
+        }
+
+        private void ResearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Uri("DoctorResearch.xaml", UriKind.Relative));
+        }
+
+        private void DiagnosisButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Uri("DoctorDiagnosis.xaml", UriKind.Relative));
+        }
+
+        private void PrintButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Uri("DoctorPrint.xaml", UriKind.Relative));
+        }
     }
 }

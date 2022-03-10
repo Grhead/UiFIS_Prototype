@@ -16,7 +16,6 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -31,7 +30,7 @@
             Text="Номер обращения:"
             Grid.Row="0"
             Grid.Column="0"
-            FontFamily="Times New Roman"
+            FontFamily="Montserrat"
             FontSize="22"
             VerticalAlignment="Center">
         </TextBlock>
@@ -39,6 +38,7 @@
             Name="NumberAdvanced"
             Grid.Row="0"
             Grid.Column="1"
+            FontFamily="Montserrat"
             Grid.ColumnSpan="2"
             Background="Gainsboro"
             Margin="0 25 0 25">
@@ -51,187 +51,31 @@
             Grid.Column="0"
             Grid.ColumnSpan="3"
             Grid.RowSpan="5"
-            Margin="10 20 0 0">
+            Margin="10 20 0 0"
+            FontFamily="Montserrat"
+            FontSize="14"
+            TextWrapping="Wrap">
         </TextBox>
-        <TextBlock
-            Name="FormatA"
-            Text="Формат листа печати"
-            FontFamily="Times New Roman"
-            FontSize="28"
-            Grid.Row="0"
-            Grid.Column="4"
-            Grid.ColumnSpan="2"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Left">
-        </TextBlock>
-        <RadioButton
-            Name="A4"
-            Grid.Row="1"
-            Grid.Column="3"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Right"
-            Margin="0 0 20 0"
-            Content="A4"
-            FontFamily="Times New Roman"
-            FontSize="26">
-        </RadioButton>
-        <RadioButton
-            Name="A5"
-            Grid.Row="2"
-            Grid.Column="3"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Right"
-            Margin="0 0 20 0"
-            Content="A5"
-            FontFamily="Times New Roman"
-            FontSize="26">
-        </RadioButton>
-        <TextBlock
-            Name="Printer"
-            Text="Принтер"
-            FontFamily="Times New Roman"
-            FontSize="28"
-            Grid.Row="3"
-            Grid.Column="4"
-            Grid.ColumnSpan="2"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Left">
-        </TextBlock>
-        <RadioButton
-            Name="Canon1"
-            Grid.Row="4"
-            Grid.Column="3"
-            Grid.ColumnSpan="3"
-            VerticalAlignment="Center"
-            Margin="131 0 0 0"
-            Content="Canon T-Power LL15G"
-            FontFamily="Times New Roman"
-            FontSize="26">
-        </RadioButton>
-        <RadioButton
-            Name="Canon2"
-            Grid.Row="5"
-            Grid.Column="3"
-            Grid.ColumnSpan="3"
-            VerticalAlignment="Center"
-            Margin="131 0 0 0"
-            Content="Canon LightPrint CA720L"
-            FontFamily="Times New Roman"
-            FontSize="26">
-        </RadioButton>
         <Button
             Name="GoPrint"
             Content="Печать"
-            Grid.Row="6"
-            Grid.Column="4"
+            Grid.Row="4"
+            Grid.ColumnSpan="2"
+            Grid.Column="3"
             Margin="10 10 10 10"
-            FontSize="16"
-            FontFamily="Times New Roman">
+            FontSize="21"
+            FontFamily="Montserrat">
         </Button>
         <Button
             Name="Returning"
             Content="Отмена"
-            Grid.Row="6"
-            Grid.Column="5"
-            Margin="10 10 10 10"
-            FontSize="16"
-            FontFamily="Times New Roman">
-        </Button>
-        <Button
-            Name="GeneralButton"
-            Content="Общая"
-            Grid.Row="6"
-            Grid.Column="0"
-            Margin="20 20 20 0"
-            FontFamily="Times New Roman"
-            FontSize="25">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Border CornerRadius="15 15 0 0"
-                                        Background="LightSlateGray">
-                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
-        </Button>
-        <Button
-            Name="ResearchButton"
-            Content="Обследование"
-            Grid.Row="6"
-            Grid.Column="1"
-            Margin="20 20 20 0"
-            FontFamily="Times New Roman"
-            FontSize="25">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Border CornerRadius="15 15 0 0"
-                                        Background="LightSlateGray">
-                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
-        </Button>
-        <Button
-            Name="DiagnosisButton"
-            Content="Диагнозы"
-            Grid.Row="6"
-            Grid.Column="2"
-            Margin="20 20 20 0"
-            FontFamily="Times New Roman"
-            FontSize="25">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Border CornerRadius="15 15 0 0"
-                                        Background="LightSlateGray">
-                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
-        </Button>
-        <Button
-            Name="PrintButton"
-            Content="Печать"
-            Grid.Row="6"
+            Grid.ColumnSpan="2"
+            Grid.Row="5"
             Grid.Column="3"
-            Margin="20 20 20 0"
-            FontFamily="Times New Roman"
-            FontSize="25">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Border CornerRadius="15 15 0 0"
-                                        Background="LightSlateGray">
-                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
+            Margin="10 10 10 10"
+            FontSize="21"
+            FontFamily="Montserrat">
         </Button>
+       
     </Grid>
 </Page>

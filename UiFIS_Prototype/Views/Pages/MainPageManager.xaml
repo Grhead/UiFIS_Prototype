@@ -47,7 +47,7 @@
                 </Button.Style>
             </Button>
             <Button
-                Height="90"
+                Height="180"
                 Margin="20 10 20 10"
                 Content="Добавить ЭМК"
                 Foreground="White"
@@ -74,7 +74,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button
+            <!--<Button
                 Height="90"
                 Margin="20 10 20 20"
                 Content="Изменить ЭМК"
@@ -101,7 +101,7 @@
                         </Setter>
                     </Style>
                 </Button.Style>
-            </Button>
+            </Button>-->
         </StackPanel>
         <StackPanel
             Grid.Row="0"

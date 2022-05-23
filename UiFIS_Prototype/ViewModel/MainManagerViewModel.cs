@@ -26,6 +26,11 @@ namespace UiFIS_Prototype.ViewModel
         public RelayCommand GoToRecord => _goToRecord ?? (_goToRecord = new RelayCommand(x =>
         {
             Service.frame.Navigate(new AddRecordPage());
-        })); 
+        }));
+        private RelayCommand _createCommand;
+        public RelayCommand CreateCommand => _createCommand ?? (_createCommand = new RelayCommand(x =>
+        {
+            Service.frame.Navigate(new AddEMC());
+        }));
     }
 }

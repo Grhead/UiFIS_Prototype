@@ -47,9 +47,37 @@
                 </Button.Style>
             </Button>
             <Button
-                Height="180"
+                Height="90"
+                Margin="20 10 20 10"
+                Content="Добавить ЭМК"
+                Foreground="White"
+                FontSize="25"
+                FontFamily="Roboto"
+                FontWeight="DemiBold"
+                Command="{Binding CreateCommand}">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border 
+                                        CornerRadius="15 15 15 15"
+                                        BorderBrush="#3B3C36"
+                                        BorderThickness="2"
+                                        Background="#464544">
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button
+                Height="90"
                 Margin="20 10 20 20"
-                Content="ЭМК"
+                Content="Изменить ЭМК"
                 Foreground="White"
                 FontSize="25"
                 FontFamily="Roboto"

@@ -115,3 +115,9 @@ C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-win
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\AddEMCPage.g.cs
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\AddEMCPage.baml
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\FirstPage.g.cs
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\SecondPage.g.cs
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\FirstPage.baml
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\SecondPage.baml

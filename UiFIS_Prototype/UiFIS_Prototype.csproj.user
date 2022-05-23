@@ -13,10 +13,19 @@
     <Compile Update="Views\MainManagerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Pages\AddEMCPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Pages\AddRecordPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Pages\FirstPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Pages\MainPageManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\SecondPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -27,10 +36,19 @@
     <Page Update="Views\MainManagerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Pages\AddEMCPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Pages\AddRecordPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Pages\FirstPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Pages\MainPageManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\SecondPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

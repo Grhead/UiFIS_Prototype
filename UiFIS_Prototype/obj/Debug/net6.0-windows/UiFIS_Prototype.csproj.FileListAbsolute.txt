@@ -96,6 +96,3 @@ C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-win
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\MainManagerWindow.baml
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\AddRecord.g.cs
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\AddRecord.baml
-C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\UserControls\SearchBox.g.cs
-C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\UserControls\SearchBox.baml
-C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

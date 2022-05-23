@@ -13,7 +13,7 @@ namespace UiFIS_Prototype.ViewModel
     {
         public MainManagerViewModel()
         {
-            ListOfRecords = new ObservableCollection<Record>(Service.db.Records.Where(x => x.RecordTime < DateTime.Now));
+            ListOfRecords = new ObservableCollection<Record>(Service.db.Records.Where(x => x.RecordTime <= DateTime.Now));
         }
         private ObservableCollection<Record> _listOfRecords = new ObservableCollection<Record>();
         public ObservableCollection<Record> ListOfRecords

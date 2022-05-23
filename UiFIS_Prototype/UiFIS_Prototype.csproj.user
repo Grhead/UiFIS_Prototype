@@ -7,9 +7,6 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="UserControls\SearchBox.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Views\AddRecord.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,11 +16,11 @@
     <Compile Update="Views\MainManagerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Pages\MainPageManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="UserControls\SearchBox.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Views\AddRecord.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -31,6 +28,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainManagerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\MainPageManager.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

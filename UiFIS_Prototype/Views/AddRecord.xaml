@@ -51,14 +51,26 @@
                 />
             <TextBox
                 Margin="15"
-                Height="300"
+                Height="250"
                 Foreground="White"
                 FontWeight="DemiBold"
                 FontSize="14"
                 TextWrapping="Wrap"
                 Background="#282828"
                 BorderBrush="#212121"
-                BorderThickness="2"/>
+                BorderThickness="2"
+                Text="{Binding SymptomText}"
+                />
+            <Button
+                Height="40"
+                Margin="10"
+                Width="230"
+                Background="#464544"
+                Content="Записать"
+                Foreground="White"
+                FontWeight="DemiBold"
+                FontSize="16"
+                Command="{Binding SetRecord}"/>
         </StackPanel>
         <StackPanel
             Grid.Column="1"
@@ -71,7 +83,8 @@
                 Background="Transparent"
                 BorderBrush="#212121"
                 BorderThickness="2"
-                ItemsSource="{Binding ListOfDoctors}">
+                ItemsSource="{Binding ListOfDoctors}"
+                SelectedItem="{Binding SelectedDoctorItem}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
@@ -103,7 +116,7 @@
                                 FontWeight="DemiBold"
                                 FontSize="14"
                                 />
-                        </StackPanel>  
+                        </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
@@ -113,7 +126,8 @@
                 Background="Transparent"
                 BorderBrush="#212121"
                 BorderThickness="2"
-                ItemsSource="{Binding ListOfPatient}">
+                ItemsSource="{Binding ListOfPatient}"
+                SelectedItem="{Binding SelectedPatientItem}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
@@ -145,13 +159,13 @@
                                 FontWeight="DemiBold"
                                 FontSize="14"
                                 />
-                                <TextBlock
+                            <TextBlock
                                 Text="{Binding BirthdayDate}"
                                 Foreground="White"
                                 FontWeight="DemiBold"
                                 FontSize="14"
                                 />
-                            </StackPanel>
+                        </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
@@ -160,13 +174,14 @@
             Grid.Column="2"
             Grid.Row="0">
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition/>
+                <RowDefinition Height="0*"/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <StackPanel
                 Grid.Row="0"
-                VerticalAlignment="Center"
-                Margin="0 30 0 0">
+                VerticalAlignment="Top"
+                Margin="0,98,0,0" Height="51">
                 <TextBlock
                     Text="Отделение"
                     Foreground="White"
@@ -185,13 +200,13 @@
             Background="Transparent"
             Foreground="White"
             FontSize="16"
-            Text="{Binding SearchText}"
             VerticalAlignment="Center"
             MaxLines="1"
             TextWrapping="NoWrap"
             FontWeight="DemiBold"
             Padding="15 0 0 0"
             Grid.Column="0"
+                        Text="{Binding DoctorAdress}"
             />
                     <Button
             Grid.Column="1"
@@ -200,14 +215,14 @@
             Content="S"
             Foreground="White"
             BorderThickness="0"
-            Command="{Binding SearchCommand}"
+            Command="{Binding DoctorAdressSearch}"
             />
                 </Grid>
             </StackPanel>
             <StackPanel
-                Grid.Row="1"
-                VerticalAlignment="Center"
-                Margin="0 0 0 30">
+                Grid.Row="2"
+                VerticalAlignment="Top"
+                Margin="0,68,0,0" Height="51">
                 <TextBlock
                     Text="Фамилия"
                     Foreground="White"
@@ -223,29 +238,28 @@
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
                     <TextBox 
-            Background="Transparent"
-            Foreground="White"
-            FontSize="16"
-            Text="{Binding SearchText}"
-            VerticalAlignment="Center"
-            MaxLines="1"
-            TextWrapping="NoWrap"
-            FontWeight="DemiBold"
-            Padding="15 0 0 0"
-            Grid.Column="0"
-            />
+                           Background="Transparent"
+                           Foreground="White"
+                           FontSize="16"
+                           VerticalAlignment="Center"
+                           MaxLines="1"
+                           TextWrapping="NoWrap"
+                           FontWeight="DemiBold"
+                           Padding="15 0 0 0"
+                           Grid.Column="0"
+                        Text="{Binding PatientSN}"
+                    />
                     <Button
-            Grid.Column="1"
-            Background="Transparent"
-            Margin="7"
-            Content="S"
-            Foreground="White"
-            BorderThickness="0"
-            Command="{Binding SearchCommand}"
-            />
+                    Grid.Column="1"
+                    Background="Transparent"
+                    Margin="7"
+                    Content="S"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Command="{Binding PatientSNSearch}"/>
                 </Grid>
             </StackPanel>
-            
+
         </Grid>
     </Grid>
 </Window>

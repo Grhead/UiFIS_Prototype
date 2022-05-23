@@ -54,7 +54,7 @@ namespace UiFIS_Prototype.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UiFIS_Prototype;V1.0.0.0;component/views/mainmanagerwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UiFIS_Prototype;component/views/mainmanagerwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\MainManagerWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

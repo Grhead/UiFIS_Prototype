@@ -94,7 +94,7 @@ namespace UiFIS_Prototype.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UiFIS_Prototype;V1.0.0.0;component/views/authwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UiFIS_Prototype;component/views/authwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\AuthWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

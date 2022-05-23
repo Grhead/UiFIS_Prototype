@@ -25,6 +25,8 @@ namespace UiFIS_Prototype.Views.Pages
         {
             InitializeComponent();
             DataContext = new CreateEMC();
+            AdressGet.Text = "Адрес";
+            AdressGet.Opacity = 0.5;
         }
         private void textBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
@@ -32,6 +34,12 @@ namespace UiFIS_Prototype.Views.Pages
             {
                 e.Handled = true;
             }
+        }
+
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            AdressGet.Text = "Адрес";
+            AdressGet.Opacity = 0.5;
         }
     }
 }

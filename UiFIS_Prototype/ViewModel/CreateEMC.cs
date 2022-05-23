@@ -13,6 +13,7 @@ namespace UiFIS_Prototype.ViewModel
         {
             BloodGroups = new List<BloodGroup>(Service.db.BloodGroups);
             Genders = new List<Gender>(Service.db.Genders);
+            Sides = new List<Side>(Service.db.Sides);
         }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -29,6 +30,11 @@ namespace UiFIS_Prototype.ViewModel
         public int DivisionCode { get; set; }
         public string Division { get; set; }
         public DateTime DateOfIssue { get; set; }
+        public string Side { get; set; }
+        public List<Side> Sides { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public string Adress { get; set; }
 
     }
 }

@@ -13,6 +13,10 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
         <StackPanel>
             <StackPanel 
                 Orientation="Horizontal"
@@ -45,6 +49,7 @@
                     MaxLength="4"
                     PreviewTextInput="textBox_PreviewTextInput"
                     Text="{Binding Series}"
+                    HorizontalContentAlignment="Center"
                     />
                 <TextBox
                     Foreground="White"
@@ -56,6 +61,7 @@
                     MaxLength="6"
                     PreviewTextInput="textBox_PreviewTextInput"
                     Text="{Binding Number}"
+                    HorizontalContentAlignment="Center"
                     />
             </StackPanel>
             <TextBlock
@@ -95,6 +101,7 @@
                 TextWrapping="NoWrap"
                 MaxLines="1"
                 PreviewTextInput="textBox_PreviewTextInput"
+                HorizontalContentAlignment="Center"
                 Text="{Binding DivisionCode}"
                 />
             <Calendar
@@ -105,8 +112,108 @@
                 SelectedDate="{Binding DateOfIssue}"
                 />
         </StackPanel>
-        <StackPanel>
-            
+        <StackPanel
+            Grid.Column="1">
+            <TextBlock
+                Foreground="White"
+                FontWeight="DemiBold"
+                FontSize="14"
+                Text="Номер телефоа"
+                HorizontalAlignment="Center"
+                />
+            <StackPanel 
+                Orientation="Horizontal"
+                HorizontalAlignment="Center">
+                <TextBlock
+                    Foreground="White"
+                    FontWeight="ExtraBold"
+                    FontSize="20"
+                    Margin="0 15 5 0"
+                    Text="+"/>
+                <TextBox
+                    Foreground="White"
+                    FontWeight="ExtraBold"
+                    FontStretch="Expanded"
+                    FontSize="20"
+                    Width="200"
+                    Margin="0 15 0 0"
+                    Background="Transparent"
+                    BorderBrush="White"
+                    BorderThickness="2"
+                    MaxLength="10"
+                    PreviewTextInput="textBox_PreviewTextInput"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"/>
+            </StackPanel>
+            <ComboBox
+                Margin="30 20 30 0"
+                Height="30"
+                ItemsSource="{Binding Sides}"
+                SelectedItem="{Binding Side}"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Title}" HorizontalAlignment="Center"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <TextBlock
+                Foreground="White"
+                FontWeight="DemiBold"
+                FontSize="14"
+                Text="Логин"
+                Margin=" 0 15 0 0"
+                HorizontalAlignment="Center"
+                />
+            <TextBox
+                Foreground="White"
+                FontWeight="DemiBold"
+                FontSize="14"
+                Height="25"
+                Width="100"
+                Background="Transparent"
+                MaxLength="12"
+                TextWrapping="NoWrap"
+                MaxLines="1"
+                HorizontalContentAlignment="Center"
+                Text="{Binding Login}"
+                />
+            <TextBlock
+                Foreground="White"
+                FontWeight="DemiBold"
+                FontSize="14"
+                Margin=" 0 15 0 0"
+                HorizontalAlignment="Center"
+                Text="Пароль"
+                />
+            <TextBox
+                Foreground="White"
+                FontWeight="DemiBold"
+                FontSize="14"
+                Height="25"
+                Width="100"
+                Background="Transparent"
+                MaxLength="12"
+                TextWrapping="NoWrap"
+                MaxLines="1"
+                HorizontalContentAlignment="Center"
+                Text="{Binding Password}"
+                />
+            <TextBox
+                Background="Transparent"
+                Height="80"
+                Margin="30"
+                Foreground="White"
+                FontWeight="DemiBold"
+                FontSize="18"
+                LostFocus="TextBox_LostFocus"
+                Text="{Binding Adress}"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Name="AdressGet"
+                Opacity ="1"
+                />
         </StackPanel>
     </Grid>
 </Page>

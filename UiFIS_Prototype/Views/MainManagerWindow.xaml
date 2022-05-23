@@ -1,0 +1,130 @@
+﻿<Window x:Class="UiFIS_Prototype.Views.MainManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UiFIS_Prototype.Views" xmlns:viewmodel="clr-namespace:UiFIS_Prototype.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainManagerViewModel}"
+        mc:Ignorable="d"
+        Title="MainManagerWindow" Height="460" Width="800"
+        ResizeMode="NoResize">
+    <Grid Background="#1C1C1C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="230"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel
+            Grid.Row="0"
+            Grid.Column="0">
+            <Button
+                Height="180"
+                Margin="20 25 20 10"
+                Content="Запись"
+                Foreground="White"
+                FontSize="25"
+                FontFamily="Roboto"
+                FontWeight="DemiBold"
+                Command="{Binding GoToRecord}">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border 
+                                        CornerRadius="15 15 15 15"
+                                        BorderBrush="#3B3C36"
+                                        BorderThickness="2"
+                                        Background="#464544">
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button
+                Height="180"
+                Margin="20 10 20 20"
+                Content="ЭМК"
+                Foreground="White"
+                FontSize="25"
+                FontFamily="Roboto"
+                FontWeight="DemiBold"
+                >
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border 
+                                        CornerRadius="15 15 15 15"
+                                        BorderBrush="#3B3C36"
+                                        BorderThickness="2"
+                                        Background="#464544">
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+        <StackPanel
+            Grid.Row="0"
+            Grid.Column="2">
+        <RichTextBox
+            Foreground="White"
+            FontSize="14"
+            FontFamily="Roboto"
+            FontWeight="DemiBold"
+            Background="#23282B"
+            Margin="15 20 15 20"
+            Height="180"
+        />
+        <Calendar
+                Background="#7F7679"
+        />
+        </StackPanel>
+        <ListBox
+            Grid.Row="0"
+            Grid.Column="1"
+            Background="Transparent"
+            Height="400"
+            BorderThickness="0"
+            Margin="5"
+            ItemsSource="{Binding ListOfRecords, UpdateSourceTrigger=PropertyChanged}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock
+                            Text="{Binding RecordTime, UpdateSourceTrigger=PropertyChanged}"
+                            Foreground="White"
+                            FontSize="14"
+                            FontFamily="Roboto"
+                            FontWeight="DemiBold"
+                            VerticalAlignment="Center"/>
+                        <TextBlock
+                            Text="{Binding Symptom, UpdateSourceTrigger=PropertyChanged}"
+                            Foreground="White"
+                            FontSize="14"
+                            FontFamily="Roboto"
+                            FontWeight="DemiBold"
+                            VerticalAlignment="Center"
+                            />
+                        <Border
+                            BorderBrush="White" 
+                            BorderThickness="1"
+                            Width="250"
+                            Margin="0 5 0 0"
+                            />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

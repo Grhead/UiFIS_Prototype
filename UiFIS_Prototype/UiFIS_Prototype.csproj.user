@@ -7,69 +7,30 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Delete.xaml.cs">
+    <Compile Update="UserControls\SearchBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="DoctorDiagnosis.xaml.cs">
+    <Compile Update="Views\AddRecord.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="DoctorMain.xaml.cs">
+    <Compile Update="Views\AuthWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="DoctorMainPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="DoctorPrint.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="DoctorResearch.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="ManagerMain.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="ManagerRegistre.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="RecordCreate.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="RecordSearch.xaml.cs">
+    <Compile Update="Views\MainManagerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AuthWindow.xaml">
+    <Page Update="UserControls\SearchBox.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Delete.xaml">
+    <Page Update="Views\AddRecord.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="DoctorDiagnosis.xaml">
+    <Page Update="Views\AuthWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="DoctorMain.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="DoctorMainPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="DoctorPrint.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="DoctorResearch.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ManagerMain.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ManagerRegistre.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="RecordCreate.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="RecordSearch.xaml">
+    <Page Update="Views\MainManagerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

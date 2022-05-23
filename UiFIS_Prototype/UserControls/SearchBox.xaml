@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="UiFIS_Prototype.SearchBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UiFIS_Prototype" xmlns:viewmodel="clr-namespace:UiFIS_Prototype.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:SearchBoxViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="290">
+    <Grid Background="#212121">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox 
+            Background="Transparent"
+            Foreground="White"
+            FontSize="16"
+            Text="{Binding SearchText}"
+            VerticalAlignment="Center"
+            MaxLines="1"
+            TextWrapping="NoWrap"
+            FontWeight="DemiBold"
+            Padding="15 0 0 0"
+            Grid.Column="0"
+            />
+        <Button
+            Grid.Column="1"
+            Background="Transparent"
+            Margin="7"
+            Content="S"
+            Foreground="White"
+            BorderThickness="0"
+            Command="{Binding SearchCommand}"
+            />
+    </Grid>
+</UserControl>

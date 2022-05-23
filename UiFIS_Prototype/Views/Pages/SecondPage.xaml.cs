@@ -25,8 +25,7 @@ namespace UiFIS_Prototype.Views.Pages
         public SecondPage()
         {
             InitializeComponent();
-            DataContext = new CreateEMC();
-            
+            DataContext = Service.CEMC;
         }
         private void textBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {

@@ -84,7 +84,7 @@
                 Margin="30 20 30 0"
                 Height="30"
                 ItemsSource="{Binding Gendersx}"
-                SelectedItem="{Binding Genderx}"
+                SelectedItem="{Binding Genderx, UpdateSourceTrigger=PropertyChanged}"
                 HorizontalContentAlignment="Center"
                 VerticalContentAlignment="Center">
                 <ComboBox.ItemTemplate>
@@ -94,12 +94,17 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
             <Calendar
-                SelectedDate="{Binding BirthDay}"/>
+                Margin="0 15 0 0"
+                Background="Transparent"
+                BorderThickness="0"
+                BorderBrush="Black"
+                SelectedDate="{Binding BirthDay, UpdateSourceTrigger=PropertyChanged}"
+                />
             <ComboBox
                 Margin="30 20 30 0"
                 Height="30"
                 ItemsSource="{Binding BloodGroupsx}"
-                SelectedItem="{Binding Bloodx}"
+                SelectedItem="{Binding Bloodx, UpdateSourceTrigger=PropertyChanged}"
                 HorizontalContentAlignment="Center"
                 VerticalContentAlignment="Center">
                 <ComboBox.ItemTemplate>

@@ -25,7 +25,7 @@ namespace UiFIS_Prototype.Views.Pages
         public FirstPage()
         {
             InitializeComponent();
-            DataContext = new CreateEMC();
+            DataContext = Service.CEMC;
         }
     }
 }

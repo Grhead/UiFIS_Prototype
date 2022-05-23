@@ -25,22 +25,22 @@ namespace UiFIS_Prototype.ViewModel
         public BloodGroup Bloodx
         {
             get { return _bloodx; }
-            set { _bloodx = value; }
+            set { _bloodx = value; OnPropertyChanged(); }
         }
         public List<BloodGroup> BloodGroupsx { get; set; }
         public Gender _genderx;
         public Gender Genderx
         {
             get { return _genderx; }
-            set { _genderx = value; }
+            set { _genderx = value; OnPropertyChanged(); }
         }
         public List<Gender> Gendersx { get; set; }
         public DateTime BirthDay { get; set; }
+        public DateTime DateOfIssue { get; set; }
         public int Series { get; set; }
         public int Number { get; set; }
         public int DivisionCode { get; set; }
         public string Division { get; set; }
-        public DateTime DateOfIssue { get; set; }
         public Side Side { get; set; }
         public List<Side> Sides { get; set; }
         public string Login { get; set; }
@@ -63,7 +63,7 @@ namespace UiFIS_Prototype.ViewModel
             ToPush.Phone = "+" + Phone;
             ToPush.FirstName = FirstName;
             ToPush.LastName = LastName;
-            ToPush.LastName = LastName;
+            ToPush.SecondName = SecondName;
             ToPush.Logins = Login;
             ToPush.Passwords = Password;
             ToPush.Polices = Police;

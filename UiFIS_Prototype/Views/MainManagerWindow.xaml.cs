@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using UiFIS_Prototype.Models.Req;
+using UiFIS_Prototype.ViewModel;
 
 namespace UiFIS_Prototype.Views
 {
@@ -22,7 +24,8 @@ namespace UiFIS_Prototype.Views
         public MainManagerWindow()
         {
             InitializeComponent();
-            DataContext = new ViewModel.MainManagerViewModel();
+            Service.frame = MainFrame;
+            DataContext = new MainManagerViewModel();
         }
     }
 }

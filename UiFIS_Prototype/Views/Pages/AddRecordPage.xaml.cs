@@ -10,20 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 using UiFIS_Prototype.ViewModel;
 
-namespace UiFIS_Prototype.Views
+namespace UiFIS_Prototype.Views.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AddRecord.xaml
+    /// Логика взаимодействия для AddRecordPage.xaml
     /// </summary>
-    public partial class AddRecord : Window
+    public partial class AddRecordPage : Page
     {
-        public AddRecord()
+        public AddRecordPage()
         {
             InitializeComponent();
             DataContext = new AddRecordViewModel();
+        }
+
+        private void DTP_ValueChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            AddRecordViewModel.Dates = DateTime.Parse(DTP.Text);
         }
     }
 }

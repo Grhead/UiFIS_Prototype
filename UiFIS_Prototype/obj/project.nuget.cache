@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "91VpWlQ/aMfxuEXy3i0dpYzIT9MFckblpQ2KwNQ3vm7L4Y+bA4vhcBnmMBecneOs6lmwPbPOjdm5kmuUMNdnZg==",
+  "dgSpecHash": "r9dCtPi0lgMIuyb6Fx12aoMmrGEy3VKx/y2dyUyZhh0kBM0zuTOfRX7ZF7QE/erogV8j1SPoarm1yCVCh516vQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\forda\\source\\repos\\UiFIS_Prototype\\UiFIS_Prototype\\UiFIS_Prototype.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\forda\\.nuget\\packages\\extended.wpf.toolkit\\4.3.0\\extended.wpf.toolkit.4.3.0.nupkg.sha512",
     "C:\\Users\\forda\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\forda\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\forda\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
@@ -48,5 +49,16 @@
     "C:\\Users\\forda\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\forda\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Extended.Wpf.Toolkit 4.3.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Extended.Wpf.Toolkit",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

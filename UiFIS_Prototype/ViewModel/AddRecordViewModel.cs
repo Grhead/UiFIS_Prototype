@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using UiFIS_Prototype.Models.Req;
+using UiFIS_Prototype.Views.Pages;
 
 namespace UiFIS_Prototype.ViewModel
 {
@@ -67,6 +68,12 @@ namespace UiFIS_Prototype.ViewModel
             set { _patientSN = value; OnPropertyChanged(); }
         }
         public string SymptomText { get; set; }
+        private static DateTime _dates;
+        public static DateTime Dates
+        {
+            get { return _dates; }
+            set { _dates = value; }
+        }
         private RelayCommand _doctorAdressSearch;
         public RelayCommand DoctorAdressSearch => _doctorAdressSearch ?? (_doctorAdressSearch = new RelayCommand(x =>
         {
@@ -81,15 +88,16 @@ namespace UiFIS_Prototype.ViewModel
         public RelayCommand SetRecord => _setRecord ?? (_setRecord = new RelayCommand(x =>
         {
             Record ToPush = new Record();
-            if (SelectedDoctorItem != null && SelectedComboBoxItem != null && SymptomText != null && SelectedPatientItem !=  null)
+            if (SelectedDoctorItem != null && SelectedComboBoxItem != null && SymptomText != null && SelectedPatientItem !=  null && Dates != null)
             {
                 ToPush.Doctor = Service.db.People.FirstOrDefault(x => x.Logins == SelectedDoctorItem.Logins).Id;
                 ToPush.Patient = Service.db.People.FirstOrDefault(x => x.Polices == SelectedPatientItem.Polices).Id;
                 ToPush.Symptom = SymptomText;
                 ToPush.TypeOfDiagnosis = SelectedComboBoxItem.Id;
-                ToPush.RecordTime = DateTime.Now;
+                ToPush.RecordTime = Dates;
                 Service.db.Add(ToPush);
                 Service.db.SaveChanges();
+                Service.frame.Navigate(new MainPageManager());
                 MessageBox.Show("Ok");
             }
         }));

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UiFIS_Prototype.Models.Req;
 using UiFIS_Prototype.Views;
+using UiFIS_Prototype.Views.Pages;
 
 namespace UiFIS_Prototype.ViewModel
 {
@@ -13,7 +14,7 @@ namespace UiFIS_Prototype.ViewModel
     {
         public MainManagerViewModel()
         {
-            ListOfRecords = new ObservableCollection<Record>(Service.db.Records.Where(x => x.RecordTime <= DateTime.Now));
+            ListOfRecords = new ObservableCollection<Record>(Service.db.Records.Where(x => x.RecordTime >= DateTime.Now));
         }
         private ObservableCollection<Record> _listOfRecords = new ObservableCollection<Record>();
         public ObservableCollection<Record> ListOfRecords
@@ -24,7 +25,7 @@ namespace UiFIS_Prototype.ViewModel
         private RelayCommand _goToRecord;
         public RelayCommand GoToRecord => _goToRecord ?? (_goToRecord = new RelayCommand(x =>
         {
-            new AddRecord().Show(); 
-        }));
+            Service.frame.Navigate(new AddRecordPage());
+        })); 
     }
 }

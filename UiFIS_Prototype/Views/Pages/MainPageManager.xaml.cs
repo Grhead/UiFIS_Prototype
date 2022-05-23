@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UiFIS_Prototype.ViewModel;
 
 namespace UiFIS_Prototype.Views.Pages
 {
@@ -23,6 +24,7 @@ namespace UiFIS_Prototype.Views.Pages
         public MainPageManager()
         {
             InitializeComponent();
+            DataContext = new MainManagerViewModel();
         }
     }
 }

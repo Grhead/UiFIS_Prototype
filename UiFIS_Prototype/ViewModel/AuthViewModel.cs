@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UiFIS_Prototype.Models.Req;
 using UiFIS_Prototype.Views;
+using UiFIS_Prototype.Views.Pages;
 
 namespace UiFIS_Prototype.ViewModel
 {
@@ -23,6 +24,7 @@ namespace UiFIS_Prototype.ViewModel
                 if (user.Side == 1)
                 {
                     new MainManagerWindow().Show();
+                    Service.frame.Navigate(new MainPageManager());
                 }
             }
         }));

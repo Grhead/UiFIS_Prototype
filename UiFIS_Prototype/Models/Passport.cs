@@ -15,7 +15,7 @@ namespace UiFIS_Prototype
         public int Number { get; set; }
         public int DivisionCode { get; set; }
         public string Division { get; set; } = null!;
-        public string DateOfIssue { get; set; } = null!;
+        public DateTime DateOfIssue { get; set; }
 
         public virtual ICollection<Person> People { get; set; }
     }

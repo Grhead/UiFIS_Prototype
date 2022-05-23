@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UiFIS_Prototype.Models.Req;
 using UiFIS_Prototype.ViewModel;
 
 namespace UiFIS_Prototype.Views.Pages
@@ -25,8 +26,7 @@ namespace UiFIS_Prototype.Views.Pages
         {
             InitializeComponent();
             DataContext = new CreateEMC();
-            AdressGet.Text = "Адрес";
-            AdressGet.Opacity = 0.5;
+            
         }
         private void textBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
@@ -36,10 +36,9 @@ namespace UiFIS_Prototype.Views.Pages
             }
         }
 
-        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
-        {
-            AdressGet.Text = "Адрес";
-            AdressGet.Opacity = 0.5;
-        }
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Service.frame.Navigate(new FirstPage());
+        //}
     }
 }

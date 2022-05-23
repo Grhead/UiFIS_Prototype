@@ -27,9 +27,5 @@ namespace UiFIS_Prototype.Views.Pages
             InitializeComponent();
             DataContext = new CreateEMC();
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Service.frame.Navigate(new SecondPage());
-        }
     }
 }

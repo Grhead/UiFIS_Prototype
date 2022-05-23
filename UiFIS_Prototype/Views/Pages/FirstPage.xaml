@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:UiFIS_Prototype.Views.Pages"
+      xmlns:local="clr-namespace:UiFIS_Prototype.Views.Pages" xmlns:viewmodel="clr-namespace:UiFIS_Prototype.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:CreateEMC}"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="FirstPage">
@@ -36,6 +36,7 @@
                 FontWeight="Light"
                 FontSize="14"
                 Text="{Binding SecondName}"
+                MaxLength="20"
                 />
             <TextBlock
                 Text="Имя"
@@ -52,6 +53,8 @@
                 FontWeight="Light"
                 FontSize="14"
                 Text="{Binding FirstName}"
+                MaxLength="20"
+                
                 />
             <TextBlock
                 Text="Отчество"
@@ -59,6 +62,7 @@
                 FontWeight="DemiBold"
                 FontSize="14"
                 Margin="15"
+                
                 />
             <TextBox
                 Margin="15"
@@ -68,6 +72,8 @@
                 FontWeight="Light"
                 FontSize="14"
                 Text="{Binding LastName}"
+                MaxLength="20"
+                
                 />
         </StackPanel>
         <StackPanel
@@ -75,26 +81,30 @@
             Grid.Column="1"
             Grid.Row="0">
             <ComboBox
-                Margin="15 0 15 5"
+                Margin="30 20 30 0"
                 Height="30"
-                ItemsSource="{Binding Genders}"
-                SelectedItem="{Binding Gender}">
+                ItemsSource="{Binding Gendersx}"
+                SelectedItem="{Binding Genderx}"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Gender1}"/>
+                        <TextBlock Text="{Binding Gender1}" HorizontalAlignment="Center"/>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
             <Calendar
                 SelectedDate="{Binding BirthDay}"/>
             <ComboBox
-                Margin="15 5 15 15"
+                Margin="30 20 30 0"
                 Height="30"
-                ItemsSource="{Binding BloodGroups}"
-                SelectedItem="{Binding Blood}">
+                ItemsSource="{Binding BloodGroupsx}"
+                SelectedItem="{Binding Bloodx}"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Groups}"/>
+                        <TextBlock Text="{Binding Groups}" HorizontalAlignment="Center"/>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
@@ -111,6 +121,7 @@
                 Foreground="Black"
                 FontWeight="Light"
                 FontSize="14"
+                Text="{Binding Police}"
                 />
         </StackPanel>
         <Button
@@ -126,7 +137,7 @@
             BorderThickness="0"
             HorizontalAlignment="Right"
             Margin="0 0 20 0"
-            Click="Button_Click"
+            Command="{Binding NextCommand}"
             />
     </Grid>
 </Page>

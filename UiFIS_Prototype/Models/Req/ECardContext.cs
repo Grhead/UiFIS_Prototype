@@ -85,7 +85,7 @@ namespace UiFIS_Prototype
 
                 entity.Property(e => e.Id).HasColumnName("ID");
 
-                entity.Property(e => e.DateOfIssue).HasMaxLength(65);
+                entity.Property(e => e.DateOfIssue).HasColumnType("date");
 
                 entity.Property(e => e.Division).HasMaxLength(65);
             });

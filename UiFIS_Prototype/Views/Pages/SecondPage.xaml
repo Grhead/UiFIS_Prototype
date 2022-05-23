@@ -82,6 +82,7 @@
                 TextWrapping="NoWrap"
                 MaxLines="1"
                 Text="{Binding Division}"
+                HorizontalContentAlignment="Center"
                 />
             <TextBlock
                 Text="Код отделения"
@@ -143,7 +144,8 @@
                     MaxLength="10"
                     PreviewTextInput="textBox_PreviewTextInput"
                     HorizontalContentAlignment="Center"
-                    VerticalContentAlignment="Center"/>
+                    VerticalContentAlignment="Center"
+                    Text="{Binding Phone}"/>
             </StackPanel>
             <ComboBox
                 Margin="30 20 30 0"
@@ -200,20 +202,56 @@
                 HorizontalContentAlignment="Center"
                 Text="{Binding Password}"
                 />
+            <TextBlock
+                Foreground="White"
+                FontWeight="DemiBold"
+                FontSize="14"
+                Margin=" 0 15 0 0"
+                HorizontalAlignment="Center"
+                Text="Адрес"
+                />
             <TextBox
                 Background="Transparent"
                 Height="80"
-                Margin="30"
+                Margin="30 10 30 0"
                 Foreground="White"
                 FontWeight="DemiBold"
                 FontSize="18"
-                LostFocus="TextBox_LostFocus"
                 Text="{Binding Adress}"
                 HorizontalContentAlignment="Center"
                 VerticalContentAlignment="Center"
                 Name="AdressGet"
-                Opacity ="1"
                 />
         </StackPanel>
+        <Button
+            Grid.Column="1"
+            Grid.Row="1"
+            Height="40"
+            Width="80"
+            Background="Transparent"
+            Content="Записать"
+            Foreground="White"
+            FontWeight="DemiBold"
+            FontSize="18"
+            BorderThickness="0"
+            HorizontalAlignment="Right"
+            Margin="0 0 20 0"
+            Command="{Binding CreateCommand}"
+            />
+        <!--<Button
+            Grid.Column="0"
+            Grid.Row="1"
+            Height="40"
+            Width="80"
+            Background="Transparent"
+            Content="Prev."
+            Foreground="White"
+            FontWeight="DemiBold"
+            FontSize="18"
+            BorderThickness="0"
+            HorizontalAlignment="Left"
+            Margin="20 0 0 0"
+            Click="Button_Click"
+            />-->
     </Grid>
 </Page>

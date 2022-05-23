@@ -173,10 +173,36 @@
                     FontWeight="DemiBold"
                     FontSize="14"
                     />
-                <uc:SearchBox
-                VerticalAlignment="Center"
-                
-                />
+                <Grid Background="#212121">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox 
+            Background="Transparent"
+            Foreground="White"
+            FontSize="16"
+            Text="{Binding SearchText}"
+            VerticalAlignment="Center"
+            MaxLines="1"
+            TextWrapping="NoWrap"
+            FontWeight="DemiBold"
+            Padding="15 0 0 0"
+            Grid.Column="0"
+            />
+                    <Button
+            Grid.Column="1"
+            Background="Transparent"
+            Margin="7"
+            Content="S"
+            Foreground="White"
+            BorderThickness="0"
+            Command="{Binding SearchCommand}"
+            />
+                </Grid>
             </StackPanel>
             <StackPanel
                 Grid.Row="1"
@@ -188,9 +214,36 @@
                     FontWeight="DemiBold"
                     FontSize="14"
                     />
-                <uc:SearchBox
-                    VerticalAlignment="Center"
-                />
+                <Grid Background="#212121">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox 
+            Background="Transparent"
+            Foreground="White"
+            FontSize="16"
+            Text="{Binding SearchText}"
+            VerticalAlignment="Center"
+            MaxLines="1"
+            TextWrapping="NoWrap"
+            FontWeight="DemiBold"
+            Padding="15 0 0 0"
+            Grid.Column="0"
+            />
+                    <Button
+            Grid.Column="1"
+            Background="Transparent"
+            Margin="7"
+            Content="S"
+            Foreground="White"
+            BorderThickness="0"
+            Command="{Binding SearchCommand}"
+            />
+                </Grid>
             </StackPanel>
             
         </Grid>

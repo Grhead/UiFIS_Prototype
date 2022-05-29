@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UiFIS_Prototype.Models.Req;
-using UiFIS_Prototype.Views;
 using UiFIS_Prototype.Views.Pages;
 
 namespace UiFIS_Prototype.ViewModel

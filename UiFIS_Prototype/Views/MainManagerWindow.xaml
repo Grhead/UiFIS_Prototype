@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UiFIS_Prototype.Views" xmlns:viewmodel="clr-namespace:UiFIS_Prototype.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainManagerViewModel}"
         mc:Ignorable="d"
-        Title="MainManagerWindow" Height="460" Width="800"
+        Title="MainManagerWindow" Height="480" Width="800"
         ResizeMode="NoResize">
     <Grid Background="#1C1C1C">
         <Frame

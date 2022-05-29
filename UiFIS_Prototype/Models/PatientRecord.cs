@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace UiFIS_Prototype
+﻿namespace UiFIS_Prototype
 {
     public partial class PatientRecord
     {

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UiFIS_Prototype.Models.Req;
 
 namespace UiFIS_Prototype
@@ -20,5 +16,6 @@ namespace UiFIS_Prototype
             get { return _listOfGenders; }
             set { _listOfGenders = value; OnPropertyChanged(); }
         }
+        
     }
 }

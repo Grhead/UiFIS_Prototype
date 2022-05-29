@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\App.xaml
-7-1319251557
+11-79446078
 
-30-952940411
+37842033141
 2191509187881
-Views\AuthWindow.xaml;Views\MainManagerWindow.xaml;Views\Pages\AddEMCPage.xaml;Views\Pages\AddRecordPage.xaml;Views\Pages\FirstPage.xaml;Views\Pages\MainPageManager.xaml;Views\Pages\SecondPage.xaml;
+Views\AuthWindow.xaml;Views\MainDoctorWindow.xaml;Views\MainManagerWindow.xaml;Views\Pages\Doctor\DoctorMainPage.xaml;Views\Pages\Doctor\MenuPage.xaml;Views\Pages\Doctor\ViewRecordsPage.xaml;Views\Pages\Manager\AddEMCPage.xaml;Views\Pages\Manager\AddRecordPage.xaml;Views\Pages\Manager\FirstPage.xaml;Views\Pages\Manager\MainPageManager.xaml;Views\Pages\Manager\SecondPage.xaml;
 
 True
 

@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using UiFIS_Prototype.Models.Req;
 using UiFIS_Prototype.Views;
 using UiFIS_Prototype.Views.Pages;
+using UiFIS_Prototype.Views.Pages.Doctor;
 
 namespace UiFIS_Prototype.ViewModel
 {
     public class AuthViewModel : StaticViewModel
     {
-        
+
         public string Login { get; set; }
         public string Password { get; set; }
         private RelayCommand _loginCommand;
@@ -25,6 +22,11 @@ namespace UiFIS_Prototype.ViewModel
                 {
                     new MainManagerWindow().Show();
                     Service.frame.Navigate(new MainPageManager());
+                }
+                else if (user.Side == 3)
+                {
+                    new MainDoctorWindow().Show();
+                    Service.frame.Navigate(new MenuPage());
                 }
             }
         }));

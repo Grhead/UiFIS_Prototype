@@ -1,0 +1,96 @@
+﻿<Window x:Class="UiFIS_Prototype.Views.MainDoctorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UiFIS_Prototype.Views" xmlns:viewmodel="clr-namespace:UiFIS_Prototype.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:DoctorNavigationViewModel}"
+        mc:Ignorable="d"
+        Title="MainDoctorWindow" Height="550" Width="860">
+    <Grid Background="#1C1C1C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Frame 
+            x:Name="DoctorMainFrame"
+            Source=""
+            NavigationUIVisibility="Hidden"
+            Grid.Column="0"
+            Grid.Row="0"/>
+        <StackPanel
+            Background="#464544" 
+            Grid.Row="1">
+            <Button
+                Content="Menu"
+                HorizontalAlignment="Left"
+                FontSize="16"
+                FontWeight="DemiBold"
+                Foreground="White"
+                Background="Transparent"
+                BorderThickness="0"
+                Margin="15"
+                Command="{Binding MenuCommand}"/>
+        </StackPanel>
+        <StackPanel
+            Grid.Row="1"
+            Background="#464544"
+            Orientation="Horizontal"
+            HorizontalAlignment="Center">
+            <Button
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Content="Info"
+                Background="Transparent"
+                BorderBrush="Black"
+                FontSize="16"
+                FontWeight="DemiBold"
+                Foreground="White"
+                Padding="5"
+                Width="110"
+                Command="{Binding InfoCommand}"
+                />
+            <Button
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Content="Records"
+                Background="Transparent"
+                BorderBrush="Black"
+                FontSize="16"
+                FontWeight="DemiBold"
+                Foreground="White"
+                Margin="20 0 20 0"
+                Padding="5"
+                Width="110"
+                Command="{Binding RecordCommand}"
+                />
+            <Button
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Content="Appointment"
+                Background="Transparent"
+                BorderBrush="Black"
+                FontSize="16"
+                FontWeight="DemiBold"
+                Margin="0 0 20 0"
+                Foreground="White"
+                Padding="5"
+                Width="110"
+                />
+            <Button
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Content="Report"
+                Background="Transparent"
+                BorderBrush="Black"
+                FontSize="16"
+                FontWeight="DemiBold"
+                Foreground="White"
+                Padding="5"
+                Width="110"
+                />
+        </StackPanel>
+    </Grid>
+</Window>

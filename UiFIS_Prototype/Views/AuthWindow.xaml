@@ -48,6 +48,9 @@
             Background="Azure"
             Grid.Row="2"
             Grid.Column="0"
+            FontSize="14"
+            FontWeight="DemiBold"
+            Foreground="Black"
             Text="{Binding Password}"/>
         <Button 
             Name="Enter" 

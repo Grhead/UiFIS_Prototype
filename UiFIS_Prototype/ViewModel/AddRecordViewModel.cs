@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using UiFIS_Prototype.Models.Req;
 using UiFIS_Prototype.Views.Pages;
@@ -16,7 +13,7 @@ namespace UiFIS_Prototype.ViewModel
         {
             ListOfTypes = new List<TypeOfDiagnosis>(Service.db.TypeOfDiagnoses);
             ListOfPatient = new List<Person>(Service.db.People.Where(x => x.Side == 1));
-            ListOfDoctors = new List<Person>(Service.db.People.Where(x => x.Side == 1));
+            ListOfDoctors = new List<Person>(Service.db.People.Where(x => x.Side == 3));
         }
         private List<TypeOfDiagnosis> _listOfTypes;
         public List<TypeOfDiagnosis> ListOfTypes
@@ -88,7 +85,7 @@ namespace UiFIS_Prototype.ViewModel
         public RelayCommand SetRecord => _setRecord ?? (_setRecord = new RelayCommand(x =>
         {
             Record ToPush = new Record();
-            if (SelectedDoctorItem != null && SelectedComboBoxItem != null && SymptomText != null && SelectedPatientItem !=  null && Dates != null)
+            if (SelectedDoctorItem != null && SelectedComboBoxItem != null && SymptomText != null && SelectedPatientItem != null && Dates != DateTime.Parse("01.01.0001"))
             {
                 ToPush.Doctor = Service.db.People.FirstOrDefault(x => x.Logins == SelectedDoctorItem.Logins).Id;
                 ToPush.Patient = Service.db.People.FirstOrDefault(x => x.Polices == SelectedPatientItem.Polices).Id;
@@ -100,6 +97,11 @@ namespace UiFIS_Prototype.ViewModel
                 Service.frame.Navigate(new MainPageManager());
                 MessageBox.Show("Ok");
             }
+        }));
+        private RelayCommand _nextCommand;
+        public RelayCommand NextCommand => _nextCommand ?? (_nextCommand = new RelayCommand(x =>
+        {
+            Service.frame.Navigate(new MainPageManager());
         }));
     }
 }

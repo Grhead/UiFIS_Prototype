@@ -10,22 +10,34 @@
     <Compile Update="Views\AuthWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\MainDoctorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\MainManagerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Pages\AddEMCPage.xaml.cs">
+    <Compile Update="Views\Pages\Doctor\DoctorMainPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Pages\AddRecordPage.xaml.cs">
+    <Compile Update="Views\Pages\Doctor\MenuPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Pages\FirstPage.xaml.cs">
+    <Compile Update="Views\Pages\Doctor\ViewRecordsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Pages\MainPageManager.xaml.cs">
+    <Compile Update="Views\Pages\Manager\AddEMCPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Pages\SecondPage.xaml.cs">
+    <Compile Update="Views\Pages\Manager\AddRecordPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\Manager\FirstPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\Manager\MainPageManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\Manager\SecondPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -33,22 +45,34 @@
     <Page Update="Views\AuthWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\MainDoctorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\MainManagerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Pages\AddEMCPage.xaml">
+    <Page Update="Views\Pages\Doctor\DoctorMainPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Pages\AddRecordPage.xaml">
+    <Page Update="Views\Pages\Doctor\MenuPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Pages\FirstPage.xaml">
+    <Page Update="Views\Pages\Doctor\ViewRecordsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Pages\MainPageManager.xaml">
+    <Page Update="Views\Pages\Manager\AddEMCPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Pages\SecondPage.xaml">
+    <Page Update="Views\Pages\Manager\AddRecordPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\Manager\FirstPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\Manager\MainPageManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\Manager\SecondPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

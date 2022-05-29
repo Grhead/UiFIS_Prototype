@@ -22,6 +22,9 @@
     <Compile Update="Views\Pages\Doctor\MenuPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Pages\Doctor\RetryRecords.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Pages\Doctor\ViewRecordsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Pages\Doctor\MenuPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\Doctor\RetryRecords.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Pages\Doctor\ViewRecordsPage.xaml">

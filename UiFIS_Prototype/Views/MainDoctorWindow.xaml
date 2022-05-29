@@ -78,6 +78,7 @@
                 Foreground="White"
                 Padding="5"
                 Width="110"
+                Command="{Binding RetryCommand}"
                 />
             <Button
                 VerticalAlignment="Center"
@@ -90,6 +91,8 @@
                 Foreground="White"
                 Padding="5"
                 Width="110"
+                Name="ReportButton"
+                Command="{Binding ReportCommand}"
                 />
         </StackPanel>
     </Grid>

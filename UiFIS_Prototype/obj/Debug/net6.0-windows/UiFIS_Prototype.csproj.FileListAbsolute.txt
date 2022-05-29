@@ -129,3 +129,16 @@ C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-win
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\MainDoctorWindow.baml
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\Doctor\ViewRecordsPage.g.cs
 C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\Doctor\ViewRecordsPage.baml
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\Doctor\RetryRecords.g.cs
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\obj\Debug\net6.0-windows\Views\Pages\Doctor\RetryRecords.baml
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\ClosedXML.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\ExcelNumberFormat.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\Ookii.Dialogs.Wpf.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\PdfSharp.Charting.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\PdfSharp.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\de\PdfSharp.Charting.resources.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\de\PdfSharp.resources.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\Reports.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\forda\source\repos\UiFIS_Prototype\UiFIS_Prototype\bin\Debug\net6.0-windows\itextsharp.dll

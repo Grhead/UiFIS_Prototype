@@ -65,5 +65,15 @@ namespace UiFIS_Prototype.ViewModel
         {
             Service.frame.Navigate(new ViewRecordsPage());
         }));
+        private RelayCommand _retryCommand;
+        public RelayCommand RetryCommand => _retryCommand ?? (_retryCommand = new RelayCommand(x =>
+        {
+            Service.frame.Navigate(new RetryRecords());
+        }));
+        private RelayCommand _reportCommand;
+        public RelayCommand ReportCommand => _reportCommand ?? (_reportCommand = new RelayCommand(x =>
+        {
+            ReportViewModel.CreateA();
+        }));
     }
 }
